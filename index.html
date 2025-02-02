@@ -6,19 +6,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style type="text/css">
       .serif {
         font-family: "DM Serif Text", serif;
-        font-weight: 400;
         font-style: normal;
       }
       h1 {
         font-size: 40px;
       }
       h2 {
-        font-size: 32px;   
+        font-size: 40px;   
       }
       body {
         font-family: "Roboto", serif;
@@ -26,85 +24,159 @@
         font-weight: 400;
         font-style: normal;
         font-variation-settings:
-          "width" 100;
+            "width" 100;
+        margin: 0;
+        padding: 0;
       }
+      
+      section {
+          margin: 0;
+          padding: 1em;
+      }
+
       .stock {
-        background-color: #F0F1F9; /* ghost white */
+          padding: 5px 10px 5px 10px;
+          background-color: #F0F1F9; /* ghost white */
+          border-radius: 10px;
         display: table;
+        text-transform: uppercase;
       }
-      #section-intro {
+
+      #intro {
         background-color: #B9C2DF; /* periwinkle */
           }
       #section-compare {
         background-color: #E9F8C9; /* nyanza */
       }
-    </style>
-    <div id="section-intro">
-      <center>
-        <h1 class="serif">My G Clinic</h1>
-        <table width="400" cellspacing=10>
-          <tr>
-            <td></td><img src="pharmaceutical-bottle-packaging-psd-mockup-thumbnail.jpg" width="200" height="300" alt="Testimonial placeholder image #1" /></td>
-            <td></td><img src="person-gray-photo-placeholder-woman-vector-23522392.jpg" width="200" height="300" alt="Testimonial placeholder image #2" /></td>
-          </tr>
-          <tr>
-            <td colspan="2"><p class="serif">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nibh erat, vestibulum in lacinia eget, elementum in nulla."</p></td>
-          </tr>
-        </table>
-      </center>      
+      .subtitle {
+          text-transform: uppercase;
+      }
+      .quote {
+          font-weight: lighter;
+      }
+      .testimonial {
+          background-color: #B9C2DF;
+          font-family: serif;
+          font-weight: lighter;
+      }
+
+      ul {
+          padding-inline-start: 0;
+      }
       
-      <h2 class="serif">Mounjaro (Tirzepatide)</h2>
-      <p>MOUNJARO IS THE SAME INGREDIENT AS OZEMPIC<sup>&reg;</sup></p>
-      <p class="stock">IN STOCK</p>
-      <table>
-        <tr>
-          <td>&#x2713</td>
-          <td><p><b>Weight loss program with GLP-1 and GIP hormones medication</b> that curbs hunger and makes you feel fuller for longer</p></td>
-        </tr>
-        <tr>
-          <td>&#x2713</td>
-          <td><p><b>No membership fees</b> -- price includes medication and shipping</p></td>
-        </tr>
-        <tr>
-          <td>&#x2713</td>
-          <td><p><b>Pay directly</b> -- no insurance required</p></td>
-        </tr>
-        <tr>
-          <td>&#x2713</td>
-          <td><p><b>Better results compared to ozempic</b>, clinical trials show up to 25lbs weight loss in 24 weeks</p></td>
-        </tr>
+      ul.alt_task {
+          list-style: none;
+      }
+
+      ul.alt_task > li {
+          display: flex;
+          flex-direction: row;
+      }
+
+      ul.alt_task > li::before {
+          font-family: 'Material Symbols Outlined';
+          content: 'task_alt';
+          font-size: 34px;
+      }
+
+      ul.alt_task p {
+          padding-left: 0.5em;
+          margin-block-start: 0.25em;
+          margin-block-end: 1.5em;
+      }
+
+      ul.included {
+          list-style: none;
+      }
+
+      ul.included > li {
+          display: flex;
+          flex-direction: row;
+      }
+
+      ul.included span.material-symbols-outlined {
+          font-size: 34px;
+      }
+
+      ul.included div {
+          flex-direction: column;
+      }
+
+      ul.included p {
+          padding-left: 0.5em;
+          margin-block-start: 0.25em;
+          margin-block-end: 1em;
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <header>
+        <center><h1 class="serif">My G Clinic</h1></center>
+      </header>
+      <main>
+        <section class="testimonial">
+          <center>
+            <table width="400" cellspacing=10>
+              <tr>
+                <td><img src="pharmaceutical-bottle-packaging-psd-mockup-thumbnail.jpg" width="200" height="300" alt="Testimonial placeholder image #1" /></td>
+                <td><img src="person-gray-photo-placeholder-woman-vector-23522392.jpg" width="200" height="300" alt="Testimonial placeholder image #2" /></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nibh erat, vestibulum in lacinia eget, elementum in nulla."</p>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </section>
         
-      </table>
-      <!--<ul>
-        <li><p><b>Weight loss program with GLP-1 and GIP hormones medication</b> that curbs hunger and makes you feel fuller for longer</p></li>
-        <li><p><b>No membership fees</b> -- price includes medication and shipping</p></li>
-        <li><p><b>Pay directly</b> -- no insurance required</p></li>
-        <li><p><b>Better results compared to ozempic</b>, clinical trials show up to 25lbs weight loss in 24 weeks</p></li>
-      </ul>-->
-  
-      <!-- link box -->
-      <p>Mounjaro, 1 pen ¥9,900</p>
-      <p><a href="">See if you're eligible</a></p>
-  
-      <hr width="80%">
-      <details>
-        <summary><b>What is Mounjaro?</b></summary>
-        <p>Mounjaro is an injectable prescription that may help adults and children with obesity, or some overweight adults and children who also have weight-related medical prolems, to lose excess body weight and keep the weight off.</p>
-      </details>
-      <hr width="80%">
-      <details>
-        <summary><b>What are potential side-effects?</b></summary>
-        <p>Everyone can have a different experience, but here are the most common side effects experienced by patients taking Mounjaro: nausea; diarrhea; decreased appetite; vomiting; constipation; indigestion; stomach pain.</p>
-      </details>
-      <hr width="80%">
-      <details>
-        <summary><b>How do I use it?</b></summary>
-        <p>Take Mounjaro once a week, at any time of the day. You'll start with 2.5mg, and after 4 weeks you'll move up to 5mg.</p>
-      </details>
-      <hr width="80%">
-    </div>
-    
-    <div id="section-compare">
+        <section id="intro">
+
+          <h2 class="serif">Mounjaro (Tirzepatide)</h2>
+          <p class="subtitle">Mounjaro is the same ingredient as ozempic<Sup>&reg;</sup></p>
+          <p class="stock">In Stock</p>
+          
+          <ul class="alt_task">
+            <li>
+              <p><b>Weight loss program with GLP-1 and GIP hormone medication</b> that curbs hunger and makes you feel fuller for longer</p>
+            </li>
+            <li>
+              <p><b>No membership fees</b> -- price includes medication and shipping</p>
+            </li>
+            <li>
+              <p><b>Pay directly</b> -- no insurance required</p>
+            </li>
+            <li>
+              <p><b>Better results compared to ozempic</b>, clinical liials show up to 25lbs weight loss in 24 weeks</p>
+            </li>
+          </ul>
+          
+          <!-- link box -->
+          <p>Mounjaro, 1 pen ¥9,900</p>
+          <p><a href="">See if you're eligible</a></p>
+          
+          <hr width="80%">
+          <details>
+            <summary><b>What is Mounjaro?</b></summary>
+            <p>Mounjaro is an injectable prescription that may help adults and children with obesity, or some overweight adults and children who also have weight-related medical problems, to lose excess body weight and keep the weight off.</p>
+          </details>
+          <hr width="80%">
+          <details>
+            <summary><b>What are potential side-effects?</b></summary>
+            <p>Everyone can have a different experience, but here are the most common side effects experienced by patients taking Mounjaro: nausea; diarrhea; decreased appetite; vomiting; constipation; indigestion; stomach pain.</p>
+          </details>
+          <hr width="80%">
+          <details>
+            <summary><b>How do I use it?</b></summary>
+            <p>Take Mounjaro once a week, at any time of the day. You'll start with 2.5mg, and after 4 weeks you'll move up to 5mg.</p>
+          </details>
+          <hr width="80%">
+
+    </section>
+
+    <section id="section-compare">
       <h2 class="serif">Mounjaro vs Ozempic</h2>
       <table>
         <tr>
@@ -124,46 +196,77 @@
       </table>
       
       <h2 class="serif">What's included?</h2>
-      <p><b>Online consultation</b></p>
-      <p>From the comfort of your home, no in-person appointments needed.</p>
-      <p><b>Your prescription</b></p>
-      <p>Our team will check your answers then prescribe your treatment.</p>
-      <p><b>Weight loss medication</b></p>
-      <p>Unlike other programs, My G Clinic includes the full cost of your medication.</p>
-      <p><b>Shipping</b></p>
-      <p>Your medication is shipped within 24 hours.</p>
-      <p><b>Ongoing care and support</b></p>
-      <p>Full access to our clinical team, whenever you need it.</p>
+
+      <ul class="included">
+        <li>
+          <span class="material-symbols-outlined">web_traffic</span>
+          <div>
+            <p><b>Online consultation</b></p>
+            <p>From the comfort of your home, no in-person appointments needed.</p>
+          </div>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">prescriptions</span>
+          <div>
+            <p><b>Your prescription</b></p>
+            <p>Our team will check your answers then prescribe your treatment.</p>
+          </div>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">vaccines</span>
+          <div>
+            <p><b>Weight loss medication</b></p>
+            <p>Unlike other programs, My G Clinic includes the full cost of your medication.</p>
+          </div>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">package_2</span>
+          <div>
+            <p><b>Shipping</b></p>
+            <p>Your medication is shipped within 24 hours.</p>
+          </div>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">support_agent</span>
+          <div>
+            <p><b>Ongoing care and support</b></p>
+            <p>Full access to our clinical team, whenever you need it.</p>
+          </div>
+        </li>
+      <ul>
+
       <h2 class="serif">Success stories from our members</h2>
       <img src="testimonial_600_400.png" alt="testimonial image 3" width="600" height="400" />
       <p class="serif">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultrices elit, ut pulvinar urna. Pellentesque fringilla dolor vel mollis gravida. Phasellus feugiat risus quis viverra vulputate. Proin accumsan sit amet sem quis placerat."</p>
-    </div>
-    
-    <h2 class="serif">How it works</h2>
-    <ol>
-      <li>
-        <p><b>Start your online consultation</b></p>
-        <p>We then recommend the right medication for you and your lifestyle.</p></li>
-      <li>
-        <p><b>We prescribe your treatment</b></p>
-        <p>Our team determines your eligibility for treatment and issues your prescription.</p></li>
-      <li>
-        <p><b>Start your weight loss journey</b></p>
-        <p>We ship your medication direct to you, with support throughout your journey.</p>
-      </li>
-    </ol>
-    <img src="near_protocol_near_vyros_bolee_cem_na_22_za_odnu_nedelyu_prevysit_li_on_2.png" alt="graph" width="600" height="400" />
-    <h3 class="serif">Lose up to 25% body weight</h3>
-    <p>Mounjaro has been found to be very effective at supporting substantial weight loss. Clinical trials show 1 in 3 people using Mounjaro 10mg or 15mg can lose up to 25% of their body weight. The studies also found that Mounjaro works best when used alongside changes to diet and increased physical exercise.</p>
-    <h2 class="serif">The science behind <i>Mounjaro</i></h3>
-    <p>Mounjaro works by activating receptors of 2 hormones in the body, called GLP-1 and GIP receptors, which are mainly found in the pancreas, brain, stomach, and other organs.</p>
-    <p>Mounjaro works in multiple ways. It helps:
-      <ul>
-        <li>The body release insulin when blood sugar is high.</li>
-        <li>The body remove excess sugar from the blood.</li>
-        <li>Stop the liver from making and releasing too much sugar.</li>
-        <li>Reduce how much food is eaten.</li>
-        <li>Slow down how quickly food leaves the stomach. This lessens over time.</li>
+    </section>
+    <section id="section-how-it-works">
+      <h2 class="serif">How it works</h2>
+      <ol>
+        <li>
+          <p><b>Start your online consultation</b></p>
+          <p>We then recommend the right medication for you and your lifestyle.</p></li>
+        <li>
+          <p><b>We prescribe your treatment</b></p>
+          <p>Our team determines your eligibility for treatment and issues your prescription.</p></li>
+        <li>
+          <p><b>Start your weight loss journey</b></p>
+          <p>We ship your medication direct to you, with support throughout your journey.</p>
+        </li>
+      </ol>
+      <img src="near_protocol_near_vyros_bolee_cem_na_22_za_odnu_nedelyu_prevysit_li_on_2.png" alt="graph" width="600" height="400" />
+      <h3 class="serif">Lose up to 25% body weight</h3>
+      <p>Mounjaro has been found to be very effective at supporting substantial weight loss. Clinical trials show 1 in 3 people using Mounjaro 10mg or 15mg can lose up to 25% of their body weight. The studies also found that Mounjaro works best when used alongside changes to diet and increased physical exercise.</p>
+      <h2 class="serif">The science behind <i>Mounjaro</i></h2>
+      <p>Mounjaro works by activating receptors of 2 hormones in the body, called GLP-1 and GIP receptors, which are mainly found in the pancreas, brain, stomach, and other organs.</p>
+      <p>Mounjaro works in multiple ways. It helps:
+        <ul>
+          <li>The body release insulin when blood sugar is high.</li>
+          <li>The body remove excess sugar from the blood.</li>
+          <li>Stop the liver from making and releasing too much sugar.</li>
+          <li>Reduce how much food is eaten.</li>
+          <li>Slow down how quickly food leaves the stomach. This lessens over time.</li>
       </ul></p>
+    </section>
+    </main>
   </body>
 </html>
