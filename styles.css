@@ -109,3 +109,54 @@ ul.included p {
     margin-block-end: 1em;
 }
 
+.linkbox {
+    background-color: white;
+    border-radius: 10px;
+    /* border-color: #f8c728; */
+    border: solid 0.6mm #f8c728;
+    padding: 1em;
+    margin: 2em 0 2em 0;
+    font-size: 18px
+}
+
+.linkbox a {
+    display: block;
+    background-color: #f8c728;
+    color: black;
+    border-radius: 30px;
+    padding: 1em 2em 1em 2em;
+    text-decoration-line: none;
+}
+
+details {
+    border-top: solid lightgrey thin;
+    padding: 1em 0 1em 0;
+
+    &:last-of-type {
+        border-bottom: solid lightgrey thin;
+    }
+}
+
+details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+
+    &::after {
+        content: '\2303';
+        transform: rotate(180deg);
+    }
+
+    [open] &::after {
+        content: '\2303';
+        transform: rotate(0deg);
+    }
+
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
