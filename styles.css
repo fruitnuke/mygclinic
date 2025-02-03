@@ -1,0 +1,111 @@
+.serif {
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 40px;   
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 1em;
+}
+
+.stock {
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: table;
+    text-transform: uppercase;
+}
+
+#intro {
+    background-color: #effaff;
+}
+
+#section-compare {
+    background-color: #f3ffed;
+}
+
+#section-how-it-works {
+    background-color: #effaff;
+}
+
+.subtitle {
+    text-transform: uppercase;
+}
+
+.quote {
+    font-weight: lighter;
+}
+
+.testimonial {
+    background-color: #effaff;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+ul.dedent {
+    padding-inline-start: 0;
+}
+
+ul.alt_task {
+    list-style: none;
+}
+
+ul.alt_task > li {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.alt_task > li::before {
+    font-family: 'Material Symbols Outlined';
+    content: 'task_alt';
+    font-size: 34px;
+}
+
+ul.alt_task p {
+    padding-left: 0.5em;
+    margin-block-start: 0.25em;
+    margin-block-end: 1.5em;
+}
+
+ul.included {
+    list-style: none;
+}
+
+ul.included > li {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.included span.material-symbols-outlined {
+    font-size: 34px;
+}
+
+ul.included div {
+    flex-direction: column;
+}
+
+ul.included p {
+    padding-left: 0.5em;
+    margin-block-start: 0.25em;
+    margin-block-end: 1em;
+}
+
