@@ -18,6 +18,7 @@ body {
     font-style: normal;
     font-variation-settings:
         "width" 100;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +31,7 @@ section {
 .stock {
     padding: 5px 10px 5px 10px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 7px;
     display: table;
     text-transform: uppercase;
 }
@@ -160,3 +161,64 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display:flex;
+    flex-direction: column;
+}
+
+div.compare-box {
+    margin: 0.1em;
+    padding: 1.25em;
+    background-color: #f9fff6;
+}
+
+div.compare-box:first-child {
+    background-color: #fefffd;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 0 10px 0px lightgrey;
+}
+
+div.compare-box:last-child {
+    border-radius: 0 15px 15px 0;
+}
+
+.rounded-small {
+    border-radius: 10px;
+}
+
+.rounded-medium {
+    border-radius: 15px;
+}
+
+.rounded-large {
+    border-radius: 20px;
+}
+
+.quote {
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    box-shadow: 0 0 10px 0px lightgrey;
+    margin-top: 1em;
+    line-height: 1.5;
+
+}
+
+/* div.quote::first-letter { */
+/*     /\* font-size: 3em; *\/ */
+/*     /\* float: left; *\/ */
+/*     /\* margin-top: -0.5em; *\/ */
+/*     initial-letter: 2 1; */
+/*     -webkit-initial-letter: 2 1; */
+/* } */
+
+.quote-glyph {
+    font-size: 3em;
+    margin: 0 0 -1em 0;
+    padding: 0;
+}
