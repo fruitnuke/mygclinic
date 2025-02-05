@@ -11,6 +11,10 @@ h2 {
     font-size: 40px;   
 }
 
+h3 {
+    font-size: 30px;
+}
+
 body {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
@@ -18,7 +22,7 @@ body {
     font-style: normal;
     font-variation-settings:
         "width" 100;
-    line-height: 1.5;
+    line-height: 2;
     margin: 0;
     padding: 0;
 }
@@ -29,11 +33,14 @@ section {
 }
 
 .stock {
-    padding: 5px 10px 5px 10px;
+    line-height: 1;
+    padding: 0.4rem 0.8lrem;
+    margin: 0;
     background-color: white;
     border-radius: 7px;
-    display: table;
+    width: fit-content;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 #intro {
@@ -124,7 +131,7 @@ ul.included p {
     display: block;
     background-color: #f8c728;
     color: black;
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 1em 2em 1em 2em;
     text-decoration-line: none;
 }
@@ -205,20 +212,50 @@ div.compare-box:last-child {
     padding: 1em;
     box-shadow: 0 0 10px 0px lightgrey;
     margin-top: 1em;
-    line-height: 1.5;
-
 }
-
-/* div.quote::first-letter { */
-/*     /\* font-size: 3em; *\/ */
-/*     /\* float: left; *\/ */
-/*     /\* margin-top: -0.5em; *\/ */
-/*     initial-letter: 2 1; */
-/*     -webkit-initial-letter: 2 1; */
-/* } */
 
 .quote-glyph {
     font-size: 3em;
     margin: 0 0 -1em 0;
     padding: 0;
+}
+
+.focus-box {
+    background-color: #fdffff;
+    padding: 1em;
+}
+
+.quote-bubble {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px 0 15px 15px;
+    position: relative;
+    width: 300px;
+    line-height: 1.6;
+    left: 30px;
+    top: -50px;
+    font-size: 18px;
+}
+
+.quote-bubble::before {
+    content: " ";
+    border-bottom: 40px solid white;
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+
+}
+
+header {
+    background-color: color-mix(in srgb, white, transparent 10%) ;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    position: sticky;
+    top: 0px;
+}
+
+header h1 {
+    padding: 1rem;
+    line-height: 1;
 }
